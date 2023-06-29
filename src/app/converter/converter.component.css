@@ -1,0 +1,35 @@
+#div_currency_from, #div_currency_to {
+    float: left;
+    padding: 0 2%;
+}
+
+#selection {
+    display:flex;
+    justify-content: center;
+    width: 100%;
+}
+
+select, input {
+    font-size: 20px;
+    height: 44px;
+    box-sizing:border-box;
+    border:none;
+    padding: 0px 10px;
+}
+
+select {
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    background-color: #ffffff;
+    margin-top: 1px;
+  }
+
+  input {
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-right: rgb(235, 234, 234) 1px solid;
+  }
+
+  *:focus {
+  outline: none;
+}

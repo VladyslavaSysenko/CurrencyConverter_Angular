@@ -1,0 +1,29 @@
+html {
+    background: linear-gradient(-45deg, #ffac93, #ffaed4, #81dcfd, #4de79f);
+    background-size: 400% 400%;
+    animation: gradient 20s ease infinite;
+    height: 100vh;
+    text-align: center;
+    font-size: 30px;
+}
+
+h1 {
+    margin-top: 5%;
+    font-size:60px;
+    text-shadow: -1px 0 rgb(113, 10, 145), 0 1px rgb(113, 10, 145), 2px 0 rgb(113, 10, 145), 0 -1px rgb(113, 10, 145);
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+ 
+    50% {
+        background-position: 100% 50%;
+    }
+ 
+    100% {
+        background-position: 0% 50%;
+    }
+}

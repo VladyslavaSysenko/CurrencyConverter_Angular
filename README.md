@@ -1,6 +1,6 @@
 # Currency converter
 
-This project made with [Angular CLI] version 16.1.1.
+This project made with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.1.
 
 ## Development server
 

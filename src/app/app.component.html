@@ -1,4 +1,4 @@
 <div id="app-div">
-    <app-header id="app-header"></app-header>
-<app-converter id="app-converter"></app-converter>
+    <app-header *ngIf='count===3' id="app-header" [rates]="rates"></app-header>
+    <app-converter *ngIf='count===3' id="app-converter" [rates]="rates" [currencies]="currencies"></app-converter>
 </div>

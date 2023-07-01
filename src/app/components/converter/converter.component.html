@@ -1,22 +1,26 @@
 <div class="converter">
     <h1>Обмін валют</h1>
     <div id="selection">
+        
         <div id="div_currency_to">
-            <input #currencyfrominput id="currencyfrominput" ng-Model='value_from' type="number" (keyup)="amount(currencyfrominput.value,'from')" aria-selected="true"/>
-            <select #currencyfrom (change)="changecurrency(currencyfrom.value,'from')">
+            <input #valuefrom id="valuefrom"  type="number" (keyup)="convert('from')"/>
+            <select #currencyfrom (change)="convert('from')">
                 <option *ngFor="let currency of currencies" >
                     {{currency}}
                 </option>
             </select>
          </div>
+
          ⇄
+
         <div id="div_currency_from">
-            <input #currencytoinput id="currencytoinput" ng-Model='value_to' type="number" (keyup)="amount(currencytoinput.value,'to')"/>
-        <select #currencyto (change)="changecurrency(currencyto.value,'to')">
+            <input #valueto id="currencytoinput" type="number" (keyup)="convert('to')"/>
+        <select #currencyto (change)="convert('to')">
             <option *ngFor="let currency of currencies" >
             {{currency}}
             </option>
         </select>
+
         </div>
     </div>
   </div>
